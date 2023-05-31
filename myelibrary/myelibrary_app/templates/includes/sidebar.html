@@ -1,0 +1,45 @@
+{% load static %}
+<div class="logo">
+    <a href="{% url 'Home' %}" class="simple-text">
+      <img src="{% static 'img/my-logo2.png' %}" alt="logo" width="90" height="80" style="margin-left: -50px;">
+      E-Library
+    </a>
+</div>
+<ul class="nav">
+<li class="nav-item active">
+        <a class="nav-link" href="{% url 'Home' %}">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+        </a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Borrowlist' %}">
+            <i class="fas fa-book-reader"></i>
+            <p>Borrow</p>
+        </a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Booklist' %}">
+            <i class="fas fa-book"></i>
+            <p>Book</p>
+        </a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Studentlist' %}">
+            <i class="fas fa-user"></i>
+            <p>Student</p>
+        </a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'report' %}">
+            <i class="fas fa-chart-pie"></i>
+            <p>Report</p>
+        </a>
+    </li>
+    <li class="nav-item active active-pro">
+        <a class="nav-link active" href="javascript:;">
+            <i class="fas fa-rocket"></i>
+            <p>Upgrade plan</p>
+        </a>
+    </li>
+</ul>
